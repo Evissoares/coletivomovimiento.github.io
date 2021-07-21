@@ -45,25 +45,28 @@
             </a>
         </li>
     </ul>
-    <form action="#" method="#">
-    <h5>Cardápio Brasílic</h5>
-    <hr />
-    <div class="item tema-branco sombra-preto">
-        <img src="img/algoritmo.png" alt="">
-        <div class="detalhe">
-            <div class="titulo">
-                Combo Verão
+<div class=container>
+
+        <form action="#" method="#">
+            <h5>Cardápio Brasílic</h5>
+            <hr />
+            <div class="item tema-branco sombra-preto">
+                <img src="img/algoritmo.png" alt="">
+                <div class="detalhe">
+                    <div class="titulo">
+                        Combo Verão
+                    </div>
+                    <div class="descricao">
+                        Salada com Smootie
+                    </div>
+                </div>
+                <div class="icone">
+                    <label for="qntdeCombo_1">Quantidade</label>
+                    <input type="number" name="qntde" id="qntdeCombo_1" value="0" min="0" class="form-control" />
+                </div>
             </div>
-            <div class="descricao">
-                Salada com Smootie
-            </div>
-        </div>
-        <div class="icone">
-            <label for="qntdeCombo_1">Quantidade</label>
-            <input type="number" name="qntde" id="qntdeCombo_1" value="0" min="0" class="form-control" />
-        </div>
-    </div>
-    </div>
+        </form>
+  
     <div class="item tema-branco sombra-preto">
         <img src="img/algoritmo.png" alt="">
         <div class="detalhe">
@@ -78,8 +81,9 @@
             <label for="qntdeCombo_2">Quantidade</label>
             <input type="number" name="qntde" id="qntdeCombo_2" value="0" min="0" class="form-control" />
         </div>
+
     </div>
-    </div>    <div class="item tema-branco sombra-preto">
+    <div class="item tema-branco sombra-preto">
         <img src="img/algoritmo.png" alt="">
         <div class="detalhe">
             <div class="titulo">
@@ -93,8 +97,9 @@
             <label for="qntdeCombo_3">Quantidade</label>
             <input type="number" name="qntde" id="qntdeCombo_3" value="0" min="0" class="form-control" />
         </div>
+
     </div>
-    </div>
+    
     <br>
     <hr />
     <h6>Preencha com seus dados:</h6>
@@ -104,7 +109,7 @@
                 <label for="nome">Seu Nome:</label>
                 <input type="text" class="form-control" id="nome" placeholder="Nome">
             </div>
-            
+
             <div class="col">
                 <label for="endereco">Endereço:</label>
                 <input type="text" class="form-control" id="endereco" placeholder="Endereço">
@@ -116,7 +121,7 @@
                 <label for="email">E-mail:</label>
                 <input type="text" class="form-control" id="email" placeholder="Seu melhor e-mail">
             </div>
-            
+
             <div class="col">
                 <label for="telefone">Telefone:</label>
                 <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
@@ -125,6 +130,7 @@
         <br />
         <button id="submit" type="submit" class="btn btn-primary">Comprar</button>
     </form>
+</div>
 
     <script src="js/recebe_dados.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/app.js"></script>

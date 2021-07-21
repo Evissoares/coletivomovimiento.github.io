@@ -1,1 +1,0 @@
-# coletivomovimiento.github.io

@@ -1,0 +1,56 @@
+@import 'componentes';
+
+body{
+    background-color: $cor-de-fundo-claro;
+}
+nav{
+    background-color: $cor-de-fundo-escuro;
+    border-bottom: $tamanho-p solid $cor-verde;
+    padding: $tamanho-p;
+    a {
+        text-transform: $font-maiusculo;
+        color: $cor-de-texto-claro;
+        span{
+            font-weight: $fonte-peso;
+        }
+    }
+    .sidenav-trigger{
+        margin: $tamanho-zero;
+    }
+}
+.card{
+    border-radius: $tamanho-p;
+    padding: $tamanho-m;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-template-areas: "logo detalhe status";
+    position: relative;
+}
+.item{
+    @extend .card;
+    margin-top: $tamanho-m;
+
+    img{
+        grid-area: logo;
+        max-width: $tamanho-gg;
+    }
+    .detalhe{
+        grid-area: detalhe;
+        margin-top: $tamanho-p;
+    }
+    .icone{
+        grid-area: status;
+        position: absolute;
+        bottom: $tamanho-zero;
+        right: $tamanho-zero;
+        i{
+            font-size: $tamanho-m;
+        }
+    }
+    .titulo{
+        font-weight: $fonte-peso;
+    }
+    .descricao{
+        font-size: $tamanho-m;
+    }
+}

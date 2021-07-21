@@ -1,0 +1,61 @@
+@import 'variaveis';
+
+@function contraste ($cor-background){
+    @if($cor-background == $cor-preto
+        or $cor-background == $cor-roxo
+        or $cor-background == $cor-azul){
+        @return $cor-branco;
+    }@else{
+        @return $cor-preto;
+    }
+}
+
+@each $chave,$valor in $cores {
+    .texto-#{$chave}{
+        color:$valor;
+    }
+    //atributo box-shadow armazena 4 variaveis sendo 1 a cor e 3 tamanhos
+    .sombra-#{$chave}{
+        box-shadow: $tamanho-zero $tamanho-p $tamanho-m $valor;
+    }
+    .tema-#{$chave}{
+        background-color: $valor;
+        color: contraste($valor);
+    }
+}
+.card{
+    border-radius: $tamanho-p;
+    padding: $tamanho-m;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-template-areas: "logo detalhe status";
+    position: relative;
+}
+.item{
+    @extend .card;
+    margin-top: $tamanho-m;
+
+    img{
+        grid-area: logo;
+        max-width: $tamanho-gg;
+    }
+    .detalhe{
+        grid-area: detalhe;
+        margin-top: $tamanho-p;
+    }
+    .icone{
+        grid-area: status;
+        position: absolute;
+        bottom: $tamanho-zero;
+        right: $tamanho-zero;
+        i{
+            font-size: $tamanho-m;
+        }
+    }
+    .titulo{
+        font-weight: $fonte-peso;
+    }
+    .descricao{
+        font-size: $tamanho-m;
+    }
+}

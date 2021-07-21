@@ -1,0 +1,277 @@
+.texto-preto {
+  color: #0e0d0d;
+}
+
+.sombra-preto {
+  -webkit-box-shadow: 0px 8px 16px #0e0d0d;
+          box-shadow: 0px 8px 16px #0e0d0d;
+}
+
+.tema-preto {
+  background-color: #0e0d0d;
+  color: white;
+}
+
+.texto-cinza {
+  color: dimgray;
+}
+
+.sombra-cinza {
+  -webkit-box-shadow: 0px 8px 16px dimgray;
+          box-shadow: 0px 8px 16px dimgray;
+}
+
+.tema-cinza {
+  background-color: dimgray;
+  color: #0e0d0d;
+}
+
+.texto-cinza-claro {
+  color: #d8d4d4;
+}
+
+.sombra-cinza-claro {
+  -webkit-box-shadow: 0px 8px 16px #d8d4d4;
+          box-shadow: 0px 8px 16px #d8d4d4;
+}
+
+.tema-cinza-claro {
+  background-color: #d8d4d4;
+  color: #0e0d0d;
+}
+
+.texto-vermelho {
+  color: #f54242;
+}
+
+.sombra-vermelho {
+  -webkit-box-shadow: 0px 8px 16px #f54242;
+          box-shadow: 0px 8px 16px #f54242;
+}
+
+.tema-vermelho {
+  background-color: #f54242;
+  color: #0e0d0d;
+}
+
+.texto-marrom {
+  color: #ad2727;
+}
+
+.sombra-marrom {
+  -webkit-box-shadow: 0px 8px 16px #ad2727;
+          box-shadow: 0px 8px 16px #ad2727;
+}
+
+.tema-marrom {
+  background-color: #ad2727;
+  color: #0e0d0d;
+}
+
+.texto-azul {
+  color: #4343f3;
+}
+
+.sombra-azul {
+  -webkit-box-shadow: 0px 8px 16px #4343f3;
+          box-shadow: 0px 8px 16px #4343f3;
+}
+
+.tema-azul {
+  background-color: #4343f3;
+  color: white;
+}
+
+.texto-branco {
+  color: white;
+}
+
+.sombra-branco {
+  -webkit-box-shadow: 0px 8px 16px white;
+          box-shadow: 0px 8px 16px white;
+}
+
+.tema-branco {
+  background-color: white;
+  color: #0e0d0d;
+}
+
+.texto-verde {
+  color: #19ca19;
+}
+
+.sombra-verde {
+  -webkit-box-shadow: 0px 8px 16px #19ca19;
+          box-shadow: 0px 8px 16px #19ca19;
+}
+
+.tema-verde {
+  background-color: #19ca19;
+  color: #0e0d0d;
+}
+
+.texto-amarelo {
+  color: #ecec48;
+}
+
+.sombra-amarelo {
+  -webkit-box-shadow: 0px 8px 16px #ecec48;
+          box-shadow: 0px 8px 16px #ecec48;
+}
+
+.tema-amarelo {
+  background-color: #ecec48;
+  color: #0e0d0d;
+}
+
+.texto-laranja {
+  color: #f7b843;
+}
+
+.sombra-laranja {
+  -webkit-box-shadow: 0px 8px 16px #f7b843;
+          box-shadow: 0px 8px 16px #f7b843;
+}
+
+.tema-laranja {
+  background-color: #f7b843;
+  color: #0e0d0d;
+}
+
+.texto-roxo {
+  color: #c70fc7;
+}
+
+.sombra-roxo {
+  -webkit-box-shadow: 0px 8px 16px #c70fc7;
+          box-shadow: 0px 8px 16px #c70fc7;
+}
+
+.tema-roxo {
+  background-color: #c70fc7;
+  color: white;
+}
+
+.card, .item {
+  border-radius: 8px;
+  padding: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 70% 10%;
+      grid-template-columns: 20% 70% 10%;
+      grid-template-areas: "logo detalhe status";
+  position: relative;
+}
+
+.item {
+  margin-top: 16px;
+}
+
+.item img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  max-width: 32px;
+}
+
+.item .detalhe {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: detalhe;
+  margin-top: 8px;
+}
+
+.item .icone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: status;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.item .icone i {
+  font-size: 16px;
+}
+
+.item .titulo {
+  font-weight: bold;
+}
+
+.item .descricao {
+  font-size: 16px;
+}
+
+body {
+  background-color: #d8d4d4;
+}
+
+nav {
+  background-color: #f7b843;
+  border-bottom: 8px solid #19ca19;
+  padding: 8px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+}
+
+nav a span {
+  font-weight: bold;
+}
+
+nav .sidenav-trigger {
+  margin: 0px;
+}
+
+.card, .item {
+  border-radius: 8px;
+  padding: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 70% 10%;
+      grid-template-columns: 20% 70% 10%;
+      grid-template-areas: "logo detalhe status";
+  position: relative;
+}
+
+.item {
+  margin-top: 16px;
+}
+
+.item img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  max-width: 32px;
+}
+
+.item .detalhe {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: detalhe;
+  margin-top: 8px;
+}
+
+.item .icone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: status;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.item .icone i {
+  font-size: 16px;
+}
+
+.item .titulo {
+  font-weight: bold;
+}
+
+.item .descricao {
+  font-size: 16px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,53 @@
+$cor-preto: rgb(14, 13, 13);
+$cor-cinza: rgb(105, 105, 105);
+$cor-cinza-claro: rgb(216, 212, 212);
+$cor-branco: white;
+$cor-roxo: rgb(199, 15, 199);
+$cor-azul: rgb(67, 67, 243);
+$cor-verde: rgb(25, 202, 25);
+$cor-amarelo: rgb(236, 236, 72);
+$cor-laranja: rgb(247, 184, 67);
+$cor-vermelho: rgb(245, 66, 66);
+$cor-marrom: rgb(173, 39, 39);
+
+$cor-de-texto-escuro:$cor-preto;
+$cor-de-texto-claro:$cor-branco;
+$cor-de-fundo-claro:$cor-cinza-claro;
+$cor-de-fundo-escuro:$cor-laranja;
+
+$cores:(
+    preto: $cor-preto,
+    cinza:$cor-cinza,
+    cinza-claro:$cor-cinza-claro,
+    vermelho:$cor-vermelho,
+    marrom:$cor-marrom,
+    azul:$cor-azul,
+    branco:$cor-branco,
+    verde:$cor-verde,
+    amarelo:$cor-amarelo,
+    laranja:$cor-laranja,
+    roxo:$cor-roxo,
+);
+
+
+$tamanho-zero: 0px;
+$tamanho-pp: 1px;
+$tamanho-p: 8px;
+$tamanho-m: 16px;
+$tamanho-g: 24px;
+$tamanho-gg: 32px; 
+$tamanho-eg: 64px;
+
+$tamanhos: (
+    zero: $tamanho-zero,
+    pp: $tamanho-pp,
+    p: $tamanho-p,
+    m: $tamanho-m,
+    g: $tamanho-g,
+    gg: $tamanho-gg,
+    eg: $tamanho-eg,
+);
+$fonte-peso:bold;
+$font-maiusculo:uppercase;
+$font-minusculo:lowercase;
+                            
